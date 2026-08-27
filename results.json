@@ -1,0 +1,434 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/node_modules/.bin/playwright",
+      "test",
+      "--reporter",
+      "json,line,/app/pw-reporter.cjs",
+      "--trace",
+      "on",
+      "--grep",
+      "ATE\\-PM\\-05:\\ a\\ persona\\ lacking\\ shifts\\.manage\\ sees\\ no\\ \"New\\ Shift\"\\ button|ATE\\-PM\\-10:\\ an\\ employee\\ retains\\ attendance\\.checkin\\ capability\\ regardless\\ of\\ the\\ \"Attendance\\ Required\\ For\"\\ opt\\-out\\ setting|the\\ popup\\ never\\ renders\\ on\\ /attendance\\ or\\ /login,\\ regardless\\ of\\ check\\-in\\ state|CD\\-FN\\-01:\\ manager\\ uploads\\ a\\ document\\ with\\ title/category/dates/visibility/file\\ via\\ the\\ real\\ form|CD\\-FN\\-02:\\ employee\\ sees\\ an\\ active,\\ effective,\\ all\\-employees\\-shared\\ document"
+    ],
+    "configFile": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/playwright.config.ts",
+    "rootDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "line"
+      ],
+      [
+        "/app/pw-reporter.cjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ate-pm-05-no-new-shift-button.spec.ts",
+      "file": "ate-pm-05-no-new-shift-button.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ATE-PM-05: a persona lacking shifts.manage sees no \"New Shift\" button",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3343,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T15:51:06.434Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b9e132472cc0d838fb6-93e6304a33c8b2affaa3",
+          "file": "ate-pm-05-no-new-shift-button.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ate-pm-10-attendance-card-visible.spec.ts",
+      "file": "ate-pm-10-attendance-card-visible.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ATE-PM-10: an employee retains attendance.checkin capability regardless of the \"Attendance Required For\" opt-out setting",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4897,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T15:51:09.915Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c2964ad1825b8b1ac7cd-b07a77d13ef516da91c4",
+          "file": "ate-pm-10-attendance-card-visible.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+      "file": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "the popup never renders on /attendance or /login, regardless of check-in state",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T15:51:14.897Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d80fa96f0fadec1425ab-5b98d0cf645595ab14a7",
+          "file": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-01-manager-uploads-document.spec.ts",
+      "file": "cd-fn-01-manager-uploads-document.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-01: manager uploads a document with title/category/dates/visibility/file via the real form",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9885,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [SESSION RECOVERED] persona=hrDirectory slot=0\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "[AuthenticationManager] [SESSION EXPIRED] persona=hrDirectory slot=0 — cached session is no longer valid.\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-08-27T15:51:18.339Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
+                        "line": 7,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b2d450cdf6e6dff9c73d-65fbadf6b17311338d75",
+          "file": "cd-fn-01-manager-uploads-document.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-02-employee-sees-shared-document.spec.ts",
+      "file": "cd-fn-02-employee-sees-shared-document.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-02: employee sees an active, effective, all-employees-shared document",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19249,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [SESSION RECOVERED] persona=employeeSelf slot=0\n"
+                    }
+                  ],
+                  "stderr": [
+                    {
+                      "text": "[AuthenticationManager] [SESSION EXPIRED] persona=employeeSelf slot=0 — cached session is no longer valid.\n"
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-08-27T15:51:28.492Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                        "line": 7,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "59ffdae5a397ac549ad5-250487f784e89c06af58",
+          "file": "cd-fn-02-employee-sees-shared-document.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-27T15:51:05.910Z",
+    "duration": 42008.244,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

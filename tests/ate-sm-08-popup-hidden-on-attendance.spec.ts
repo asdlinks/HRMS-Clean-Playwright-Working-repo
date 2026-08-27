@@ -11,9 +11,9 @@ test('the popup never renders on /attendance or /login, regardless of check-in s
 
   await employeeSelfPage.goto('/attendance');
   await popup.expectHidden();
-  await expect(popup.root).toHaveCount(0);
+  await expect(popup.card).toHaveCount(0);
 
   await employeeSelfPage.goto('/login');
   await popup.expectHidden();
-  await expect(popup.root).toHaveCount(0);
+  await expect(popup.card).toHaveCount(0);
 });
