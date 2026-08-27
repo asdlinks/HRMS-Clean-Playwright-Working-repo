@@ -1,0 +1,1005 @@
+{
+  "config": {
+    "argv": [
+      "/usr/bin/node",
+      "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/node_modules/.bin/playwright",
+      "test",
+      "--reporter",
+      "json,line,/app/pw-reporter.cjs",
+      "--trace",
+      "on",
+      "--grep",
+      "ATE\\-PM\\-05:\\ a\\ persona\\ lacking\\ shifts\\.manage\\ sees\\ no\\ \"New\\ Shift\"\\ button|the\\ popup\\ never\\ renders\\ on\\ /attendance\\ or\\ /login,\\ regardless\\ of\\ check\\-in\\ state|CD\\-FN\\-02:\\ employee\\ sees\\ an\\ active,\\ effective,\\ all\\-employees\\-shared\\ document|CD\\-UI\\-02:\\ submitting\\ the\\ Upload\\ Document\\ form\\ with\\ empty\\ required\\ fields\\ is\\ blocked\\ by\\ native\\ HTML5\\ validation|CD\\-UI\\-04\\ \\(confirmed\\ gap\\):\\ the\\ file\\ input's\\ accept=\"\\.\\.\\.\"\\ attribute\\ is\\ cosmetic\\ only\\ —\\ setInputFiles\\ bypasses\\ it,\\ and\\ the\\ server\\ 400\\ surfaces\\ in\\ the\\ dialog|CD\\-UI\\-08:\\ the\\ Version\\ History\\ dialog's\\ per\\-version\\ download\\ button\\ requests\\ that\\ specific\\ version|EM\\-NG\\-09:\\ users\\.password\\.reset\\ is\\ required\\ —\\ a\\ caller\\ without\\ it\\ never\\ sees\\ the\\ Reset\\ Password\\ action|EM\\-UI\\-12:\\ Manage\\ Roles\\ is\\ only\\ visible/loadable\\ with\\ roles\\.manage|LV\\-UI\\-05:\\ toggling\\ Half\\ Day\\ forces\\ end_date\\ =\\ start_date\\ and\\ hides\\ the\\ End\\ Date\\ field|LV\\-UI\\-11:\\ the\\ date\\-picker\\ minimum\\ is\\ hardcoded\\ to\\ 2026\\-01\\-01\\ rather\\ than\\ computed\\ from\\ today\\ \\(known\\ gap\\)|LV\\-VD\\-01:\\ submitting\\ with\\ type/start_date/end_date\\ missing\\ is\\ blocked\\ by\\ required\\-field\\ browser\\ validation|PA\\-UI\\-02:\\ an\\ empty\\ password\\ shows\\ inline\\ client\\-side\\ validation|PA\\-UI\\-03:\\ a\\ mocked\\ 401/429\\ login\\ response\\ is\\ surfaced\\ in\\ the\\ top\\-level\\ Alert|Dashboard\\ loads\\ welcome\\ banner\\ and\\ summary\\ cards",
+      "--workers",
+      "4"
+    ],
+    "configFile": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/playwright.config.ts",
+    "rootDir": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ],
+      [
+        "line"
+      ],
+      [
+        "/app/pw-reporter.cjs"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ate-pm-05-no-new-shift-button.spec.ts",
+      "file": "ate-pm-05-no-new-shift-button.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ATE-PM-05: a persona lacking shifts.manage sees no \"New Shift\" button",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13540,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:35.343Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7b9e132472cc0d838fb6-93e6304a33c8b2affaa3",
+          "file": "ate-pm-05-no-new-shift-button.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+      "file": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "the popup never renders on /attendance or /login, regardless of check-in state",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10992,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:34.685Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d80fa96f0fadec1425ab-5b98d0cf645595ab14a7",
+          "file": "ate-sm-08-popup-hidden-on-attendance.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-02-employee-sees-shared-document.spec.ts",
+      "file": "cd-fn-02-employee-sees-shared-document.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-02: employee sees an active, effective, all-employees-shared document",
+          "ok": false,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 47935,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_v_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_10_ _r_v_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_v_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_10_ _r_v_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at selectMaxDataGridPageSize (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts:13:3",
+                    "location": {
+                      "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                      "column": 21,
+                      "line": 114
+                    },
+                    "snippet": "   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                        "column": 21,
+                        "line": 114
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_v_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_10_ _r_v_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is not stable\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m  - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |\n    at selectMaxDataGridPageSize (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts:13:3"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=2\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=2\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=2\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=2\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:35.670Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                        "line": 7,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                    "column": 21,
+                    "line": 114
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "59ffdae5a397ac549ad5-250487f784e89c06af58",
+          "file": "cd-fn-02-employee-sees-shared-document.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+      "file": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-02: submitting the Upload Document form with empty required fields is blocked by native HTML5 validation",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 31852,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:35.598Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-02-empty-required-fi-9031d--by-native-HTML5-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-02-empty-required-fi-9031d--by-native-HTML5-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1f11d61e631922780da-9bd54bf30fc6c089a5e8",
+          "file": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+      "file": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-04 (confirmed gap): the file input's accept=\"...\" attribute is cosmetic only — setInputFiles bypasses it, and the server 400 surfaces in the dialog",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 31028,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at selectMaxDataGridPageSize (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-ui-04-accept-attribute-cosmetic-only.spec.ts:11:3",
+                    "location": {
+                      "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                      "column": 21,
+                      "line": 114
+                    },
+                    "snippet": "   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                        "column": 21,
+                        "line": 114
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |\n    at selectMaxDataGridPageSize (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/tests/cd-ui-04-accept-attribute-cosmetic-only.spec.ts:11:3"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:47.077Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-04-accept-attribute--f72da--400-surfaces-in-the-dialog-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-04-accept-attribute--f72da--400-surfaces-in-the-dialog-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-04-accept-attribute--f72da--400-surfaces-in-the-dialog-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/helpers/locators.ts",
+                    "column": 21,
+                    "line": 114
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "51d448597d03b790d06e-d34365f714cf2551f2b6",
+          "file": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+      "file": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-08: the Version History dialog's per-version download button requests that specific version",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11468,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:46:49.956Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-08-version-history-d-03cbc-uests-that-specific-version-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/cd-ui-08-version-history-d-03cbc-uests-that-specific-version-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6fc46e6083ff1cbb92bc-b4726e9f2aa69446dd64",
+          "file": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dashboard-summary-cards-load.spec.ts",
+      "file": "dashboard-summary-cards-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard loads welcome banner and summary cards",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9397,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=admin slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=admin slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:01.698Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/dashboard-summary-cards-lo-81999-me-banner-and-summary-cards-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/dashboard-summary-cards-lo-81999-me-banner-and-summary-cards-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65ffa8786d2aa8f0df0c-32c1c22ca7b3275d90c5",
+          "file": "dashboard-summary-cards-load.spec.ts",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-ng-09-no-reset-password-action.spec.ts",
+      "file": "em-ng-09-no-reset-password-action.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-NG-09: users.password.reset is required — a caller without it never sees the Reset Password action",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 12448,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=usersManageOnly slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=usersManageOnly slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:09.100Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/em-ng-09-no-reset-password-43ccf-s-the-Reset-Password-action-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/em-ng-09-no-reset-password-43ccf-s-the-Reset-Password-action-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4318839a198820148fa5-c78b6659adc531500429",
+          "file": "em-ng-09-no-reset-password-action.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+      "file": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-UI-12: Manage Roles is only visible/loadable with roles.manage",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12658,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=usersManageOnly slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=usersManageOnly slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:11.626Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/em-ui-12-manage-roles-hidd-852d8--loadable-with-roles-manage-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/em-ui-12-manage-roles-hidd-852d8--loadable-with-roles-manage-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5722b162f43f544d01b0-39f20fe9569ab743e568",
+          "file": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-05-half-day-hides-end-date.spec.ts",
+      "file": "lv-ui-05-half-day-hides-end-date.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-05: toggling Half Day forces end_date = start_date and hides the End Date field",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:23.063Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-ui-05-half-day-hides-en-e1698-nd-hides-the-End-Date-field-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-ui-05-half-day-hides-en-e1698-nd-hides-the-End-Date-field-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8164dcc518b78c13b4de-90d461bcbc83501f68b8",
+          "file": "lv-ui-05-half-day-hides-end-date.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-11-date-picker-minimum.spec.ts",
+      "file": "lv-ui-11-date-picker-minimum.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-11: the date-picker minimum is hardcoded to 2026-01-01 rather than computed from today (known gap)",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 14512,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:22.100Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-ui-11-date-picker-minim-d34eb-puted-from-today-known-gap--chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-ui-11-date-picker-minim-d34eb-puted-from-today-known-gap--chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3344eca37eadf9f4e699-41ec7c362b5983ec6e58",
+          "file": "lv-ui-11-date-picker-minimum.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-vd-01-required-fields-block-submit.spec.ts",
+      "file": "lv-vd-01-required-fields-block-submit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-VD-01: submitting with type/start_date/end_date missing is blocked by required-field browser validation",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 14653,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:27.014Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-vd-01-required-fields-b-f8e44-ed-field-browser-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/lv-vd-01-required-fields-b-f8e44-ed-field-browser-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a58b950a99fc33fbbf6a-c842e986637872a7f513",
+          "file": "lv-vd-01-required-fields-block-submit.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-02-empty-password-validation.spec.ts",
+      "file": "pa-ui-02-empty-password-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-02: an empty password shows inline client-side validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13170,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:28.485Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2dd8985de90f4825b3b3-d86ca9afe70cfe040fa6",
+          "file": "pa-ui-02-empty-password-validation.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-03-mocked-login-error-alert.spec.ts",
+      "file": "pa-ui-03-mocked-login-error-alert.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-03: a mocked 401/429 login response is surfaced in the top-level Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 6537,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-27T14:47:42.312Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/88858409-ea20-4748-bd92-000c433c33ab/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef3c2e55ce53a9a8e046-8720e2b916aca8ea34d1",
+          "file": "pa-ui-03-mocked-login-error-alert.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-27T14:46:32.637Z",
+    "duration": 76811.697,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

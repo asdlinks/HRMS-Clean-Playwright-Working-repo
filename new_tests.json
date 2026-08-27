@@ -1,0 +1,8 @@
+[
+  {
+    "id": "dashboard-summary-cards-load",
+    "title": "Dashboard loads welcome banner and summary cards",
+    "description": "Verifies the dashboard renders the welcome banner with the logged-in user's name and today's date, plus the Leaves Available, Last Leave Taken, Team Out This Week, and Next Holiday summary cards with values, once loading completes.",
+    "file": "tests/dashboard-summary-cards-load.spec.ts"
+  }
+]
