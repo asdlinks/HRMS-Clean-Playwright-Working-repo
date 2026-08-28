@@ -4,12 +4,32 @@
   "private": true,
   "description": "Playwright UI suite converted to standard @playwright/test house style.",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "lint": "eslint . --ext .ts",
+    "lint:skips": "grep -rn --include=\"*.spec.ts\" -E \"test\\.skip\\(|\\.skip\\(\" tests | grep -v \"TODO(\" && echo 'Undocumented test.skip found (missing TODO/ticket reference)' && exit 1 || echo 'No undocumented skips found'"
   },
   "devDependencies": {
     "@playwright/test": "1.61.1",
     "@types/node": "^26.1.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
     "dotenv": "^17.4.2",
+    "eslint": "^8.57.0",
+    "eslint-plugin-playwright": "^1.6.0",
     "typescript": "^7.0.2"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "playwright"
+    ],
+    "extends": [
+      "plugin:playwright/recommended"
+    ],
+    "rules": {
+      "playwright/missing-playwright-await": "error",
+      "@typescript-eslint/no-floating-promises": "error"
+    }
   }
 }
