@@ -9,7 +9,7 @@
     "lint:skips": "grep -rn --include=\"*.spec.ts\" -E \"test\\.skip\\(|\\.skip\\(\" tests | grep -v \"TODO(\" && echo 'Undocumented test.skip found (missing TODO/ticket reference)' && exit 1 || echo 'No undocumented skips found'"
   },
   "devDependencies": {
-    "@playwright/test": "1.61.1",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",

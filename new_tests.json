@@ -1,26 +1,14 @@
 [
   {
-    "id": "leaves-apply-full-day-happy-path",
-    "title": "Apply for Leave (Full Day): submit a valid full-day leave request end-to-end",
-    "description": "Applies for a Full Day Casual Leave request via the Record Leave drawer and confirms it appears under both the All and Pending tabs on /leaves.",
-    "file": "tests/leaves-apply-full-day-happy-path.spec.ts"
+    "id": "login-logout-and-relogin",
+    "title": "user can log out and log back in, landing on Dashboard",
+    "description": "Verifies the Dashboard is the Home page and that a user can log out via the account menu and log back in successfully.",
+    "file": "tests/login-logout-and-relogin.spec.ts"
   },
   {
-    "id": "leaves-apply-half-day-happy-path",
-    "title": "Apply for Leave (Half Day): submit a valid half-day leave request",
-    "description": "Toggles the mutually-exclusive Half Day option, confirms the End Date field disappears in favor of a single Date field, submits, and confirms the request appears on /leaves.",
-    "file": "tests/leaves-apply-half-day-happy-path.spec.ts"
-  },
-  {
-    "id": "leaves-apply-validation-errors",
-    "title": "Apply for Leave: validation and boundary errors are handled",
-    "description": "Covers empty required fields, an End Date before Start Date, a past Start Date, requesting more days than the remaining balance, and a blank Reason, confirming each is rejected cleanly.",
-    "file": "tests/leaves-apply-validation-errors.spec.ts"
-  },
-  {
-    "id": "cross-module-apply-then-cancel-leave",
-    "title": "Cross-module: apply for a leave on /leaves, then cancel it via /cancellation, and verify status updates",
-    "description": "Applies for a leave on /leaves, cancels it via /cancellation with a reason, and confirms the status moves from Pending to Cancelled back on /leaves.",
-    "file": "tests/cross-module-apply-then-cancel-leave.spec.ts"
+    "id": "settings-update-password-validation",
+    "title": "Settings: Update Password form validation",
+    "description": "Covers empty-field, mismatched New/Confirm, and incorrect Current Password error states on the Settings > Update Password form.",
+    "file": "tests/settings-update-password-validation.spec.ts"
   }
 ]
