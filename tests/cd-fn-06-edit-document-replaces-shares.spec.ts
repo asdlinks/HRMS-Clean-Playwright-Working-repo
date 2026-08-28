@@ -3,6 +3,9 @@ import { CompanyDocumentsPage } from '../pages/CompanyDocumentsPage';
 import { DocumentFormDialog } from '../pages/DocumentFormDialog';
 import { createDisposableDocument } from '../helpers/companyDocuments';
 import { uniqueDocumentTitle } from '../fixtures/companyDocuments-data';
+import { AppShellPopup } from '../pages/components/AppShellPopup';
+import { selectMaxDataGridPageSize } from '../helpers/locators';
+import { assertSessionActive } from '../helpers/sessionGuard';
 
 test.beforeEach(() => { test.slow(); });
 
@@ -13,7 +16,14 @@ test('CD-FN-06: editing a document updates its metadata and fully replaces its s
 
   const docs = new CompanyDocumentsPage(hrDirectoryPage);
   const form = new DocumentFormDialog(hrDirectoryPage);
-  await docs.goto();
+  // Not docs.goto() directly — see cd-fn-01's comment: the missed-checkin
+  // popup's backdrop can appear mid-navigation and intercept goto()'s own
+  // internal pagination-size click. Dismissing between the navigation and
+  // that click removes the race.
+  await hrDirectoryPage.goto('/company-documents');
+  assertSessionActive(hrDirectoryPage);
+  await new AppShellPopup(hrDirectoryPage).dismissIfPresent(5000).catch(() => {});
+  await selectMaxDataGridPageSize(hrDirectoryPage);
   await docs.editButton(originalTitle).click();
   await form.waitForOpen();
   await form.fill({ title: updatedTitle, allEmployees: false });

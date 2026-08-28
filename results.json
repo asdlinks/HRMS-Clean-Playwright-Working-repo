@@ -2,41 +2,41 @@
   "config": {
     "argv": [
       "/usr/bin/node",
-      "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/node_modules/.bin/playwright",
+      "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/node_modules/.bin/playwright",
       "test",
       "--reporter",
       "json,line,/app/pw-reporter.cjs",
       "--trace",
       "on",
-      "--grep",
-      "ATE\\-PM\\-05:\\ a\\ persona\\ lacking\\ shifts\\.manage\\ sees\\ no\\ \"New\\ Shift\"\\ button|ATE\\-PM\\-10:\\ an\\ employee\\ retains\\ attendance\\.checkin\\ capability\\ regardless\\ of\\ the\\ \"Attendance\\ Required\\ For\"\\ opt\\-out\\ setting|the\\ popup\\ never\\ renders\\ on\\ /attendance\\ or\\ /login,\\ regardless\\ of\\ check\\-in\\ state|CD\\-FN\\-01:\\ manager\\ uploads\\ a\\ document\\ with\\ title/category/dates/visibility/file\\ via\\ the\\ real\\ form|CD\\-FN\\-02:\\ employee\\ sees\\ an\\ active,\\ effective,\\ all\\-employees\\-shared\\ document"
+      "--workers",
+      "4"
     ],
-    "configFile": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/playwright.config.ts",
-    "rootDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests",
+    "configFile": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/playwright.config.ts",
+    "rootDir": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
-    "globalSetup": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/global-setup.ts",
+    "globalSetup": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/global-setup.ts",
     "globalTeardown": null,
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results",
+        "outputDir": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests",
+        "testDir": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -65,7 +65,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.61.1",
-    "workers": 1,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
@@ -93,7 +93,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 3343,
+                  "duration": 14234,
                   "errors": [],
                   "stdout": [
                     {
@@ -105,18 +105,13 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-27T15:51:06.434Z",
+                  "startTime": "2026-08-28T14:29:06.332Z",
                   "annotations": [],
                   "attachments": [
                     {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/test-finished-1.png"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/trace.zip"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/ate-pm-05-no-new-shift-but-2dba2-ge-sees-no-New-Shift-button-chromium/trace.zip"
                     }
                   ]
                 }
@@ -152,33 +147,33 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4897,
+                  "duration": 14714,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=0\n"
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=1\n"
                     },
                     {
-                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=0\n"
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=1\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-27T15:51:09.915Z",
+                  "startTime": "2026-08-28T14:29:06.536Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/test-finished-1.png"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/trace.zip"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/ate-pm-10-attendance-card--03eb5-equired-For-opt-out-setting-chromium/trace.zip"
                     }
                   ]
                 }
@@ -214,26 +209,33 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 3411,
+                  "duration": 12854,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=2\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=2\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-27T15:51:14.897Z",
+                  "startTime": "2026-08-28T14:29:06.465Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/test-finished-1.png"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/trace.zip"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/ate-sm-08-popup-hidden-on--9aaa6-egardless-of-check-in-state-chromium/trace.zip"
                     }
                   ]
                 }
@@ -267,8 +269,8 @@
                 {
                   "type": "slow",
                   "location": {
-                    "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
-                    "line": 7,
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
+                    "line": 10,
                     "column": 30
                   }
                 }
@@ -278,32 +280,28 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 9885,
+                  "duration": 25475,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=0\n"
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=3\n"
                     },
                     {
-                      "text": "[AuthenticationManager] [SESSION RECOVERED] persona=hrDirectory slot=0\n"
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=3\n"
                     }
                   ],
-                  "stderr": [
-                    {
-                      "text": "[AuthenticationManager] [SESSION EXPIRED] persona=hrDirectory slot=0 — cached session is no longer valid.\n"
-                    }
-                  ],
+                  "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-27T15:51:18.339Z",
+                  "startTime": "2026-08-28T14:29:06.591Z",
                   "annotations": [
                     {
                       "type": "slow",
                       "location": {
-                        "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
-                        "line": 7,
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-01-manager-uploads-document.spec.ts",
+                        "line": 10,
                         "column": 30
                       }
                     }
@@ -312,12 +310,12 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/test-finished-1.png"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/test-finished-1.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/trace.zip"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-01-manager-uploads-d-b20e6-lity-file-via-the-real-form-chromium/trace.zip"
                     }
                   ]
                 }
@@ -327,7 +325,7 @@
           ],
           "id": "b2d450cdf6e6dff9c73d-65fbadf6b17311338d75",
           "file": "cd-fn-01-manager-uploads-document.spec.ts",
-          "line": 9,
+          "line": 12,
           "column": 5
         }
       ]
@@ -351,7 +349,7 @@
                 {
                   "type": "slow",
                   "location": {
-                    "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
                     "line": 7,
                     "column": 30
                   }
@@ -362,31 +360,27 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 19249,
+                  "duration": 35620,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=0\n"
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=2\n"
                     },
                     {
-                      "text": "[AuthenticationManager] [SESSION RECOVERED] persona=employeeSelf slot=0\n"
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=2\n"
                     }
                   ],
-                  "stderr": [
-                    {
-                      "text": "[AuthenticationManager] [SESSION EXPIRED] persona=employeeSelf slot=0 — cached session is no longer valid.\n"
-                    }
-                  ],
+                  "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-08-27T15:51:28.492Z",
+                  "startTime": "2026-08-28T14:29:20.224Z",
                   "annotations": [
                     {
                       "type": "slow",
                       "location": {
-                        "file": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-02-employee-sees-shared-document.spec.ts",
                         "line": 7,
                         "column": 30
                       }
@@ -396,17 +390,17 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-2.png"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-1.png"
                     },
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-1.png"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/test-finished-2.png"
                     },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/tmp/maestro/6c1657b1-d4ee-4f25-b932-79929475536b/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/trace.zip"
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-02-employee-sees-sha-eb1d0-l-employees-shared-document-chromium/trace.zip"
                     }
                   ]
                 }
@@ -420,15 +414,3318 @@
           "column": 5
         }
       ]
+    },
+    {
+      "title": "cd-fn-03-manager-filters-document-list.spec.ts",
+      "file": "cd-fn-03-manager-filters-document-list.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-03: manager's list reflects status/category filters and the API's search query param, regardless of status/date",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-03-manager-filters-document-list.spec.ts",
+                    "line": 6,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 36754,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('tab', { name: 'Archived' })\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"tab\" tabindex=\"-1\" type=\"button\" aria-selected=\"false\" class=\"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-gwvc6\">Archived</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('tab', { name: 'Archived' })\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"tab\" tabindex=\"-1\" type=\"button\" aria-selected=\"false\" class=\"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-gwvc6\">Archived</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at CompanyDocumentsPage.showArchived (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:91:28)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-03-manager-filters-document-list.spec.ts:20:14",
+                    "location": {
+                      "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts",
+                      "column": 28,
+                      "line": 91
+                    },
+                    "snippet": "   at ../pages/CompanyDocumentsPage.ts:91\n\n  89 |\n  90 |   async showArchived() {\n> 91 |     await this.archivedTab.click();\n     |                            ^\n  92 |   }\n  93 |\n  94 |   async showActive() {"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts",
+                        "column": 28,
+                        "line": 91
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('tab', { name: 'Archived' })\u001b[22m\n\u001b[2m    - locator resolved to <button role=\"tab\" tabindex=\"-1\" type=\"button\" aria-selected=\"false\" class=\"MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary css-gwvc6\">Archived</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    27 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../pages/CompanyDocumentsPage.ts:91\n\n  89 |\n  90 |   async showArchived() {\n> 91 |     await this.archivedTab.click();\n     |                            ^\n  92 |   }\n  93 |\n  94 |   async showActive() {\n    at CompanyDocumentsPage.showArchived (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:91:28)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-03-manager-filters-document-list.spec.ts:20:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:29:21.776Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-03-manager-filters-document-list.spec.ts",
+                        "line": 6,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-03-manager-filters-d-64f1f-m-regardless-of-status-date-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-03-manager-filters-d-64f1f-m-regardless-of-status-date-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-03-manager-filters-d-64f1f-m-regardless-of-status-date-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts",
+                    "column": 28,
+                    "line": 91
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "e15229e61914948501d3-8fb748351e9cd49289f5",
+          "file": "cd-fn-03-manager-filters-document-list.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-06-edit-document-replaces-shares.spec.ts",
+      "file": "cd-fn-06-edit-document-replaces-shares.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-06: editing a document updates its metadata and fully replaces its share rows",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-06-edit-document-replaces-shares.spec.ts",
+                    "line": 10,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 44545,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=hrDirectory slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=hrDirectory slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=manager slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=manager slot=1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:29:22.098Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-06-edit-document-replaces-shares.spec.ts",
+                        "line": 10,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-06-edit-document-rep-78360-lly-replaces-its-share-rows-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-06-edit-document-rep-78360-lly-replaces-its-share-rows-chromium/test-finished-2.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-06-edit-document-rep-78360-lly-replaces-its-share-rows-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0a1d10de1be70481e565-6e4f4ab29b1998c6ede4",
+          "file": "cd-fn-06-edit-document-replaces-shares.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-09-archive-restore-document.spec.ts",
+      "file": "cd-fn-09-archive-restore-document.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-09 / CD-UI-07: archiving then restoring a document transitions active -> archived -> active, with the row action flipping labels",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-09-archive-restore-document.spec.ts",
+                    "line": 6,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 20314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:29:34.362Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-09-archive-restore-document.spec.ts",
+                        "line": 6,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-09-archive-restore-d-c8b00--row-action-flipping-labels-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-09-archive-restore-d-c8b00--row-action-flipping-labels-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "aadf71f5c83c41f09f2d-c9ca7c2a6ac75f66ad74",
+          "file": "cd-fn-09-archive-restore-document.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-fn-10-delete-document.spec.ts",
+      "file": "cd-fn-10-delete-document.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-FN-10 / CD-UI-06: deleting a document warns it is permanent, then removes it (and every version) transactionally",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-10-delete-document.spec.ts",
+                    "line": 8,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 18074,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:29:55.538Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-fn-10-delete-document.spec.ts",
+                        "line": 8,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-10-delete-document-C-68ffb-ery-version-transactionally-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-fn-10-delete-document-C-68ffb-ery-version-transactionally-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "50c82fe02004983728e8-4c2bf103580c3bf01b2d",
+          "file": "cd-fn-10-delete-document.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-01-document-view-by-persona.spec.ts",
+      "file": "cd-ui-01-document-view-by-persona.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-01: the same route renders AdminDocumentsView (full CRUD) for a manage holder and EmployeeDocumentsView (read-only) for everyone else",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-01-document-view-by-persona.spec.ts",
+                    "line": 7,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 39559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:29:56.365Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-01-document-view-by-persona.spec.ts",
+                        "line": 7,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-01-document-view-by--8d1a8-read-only-for-everyone-else-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-01-document-view-by--8d1a8-read-only-for-everyone-else-chromium/test-finished-2.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-01-document-view-by--8d1a8-read-only-for-everyone-else-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8264a19af02596a88fdd-ac0da41e3af6357bd346",
+          "file": "cd-ui-01-document-view-by-persona.spec.ts",
+          "line": 9,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+      "file": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-02: submitting the Upload Document form with empty required fields is blocked by native HTML5 validation",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:02.216Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-02-empty-required-fi-9031d--by-native-HTML5-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-02-empty-required-fi-9031d--by-native-HTML5-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e1f11d61e631922780da-9bd54bf30fc6c089a5e8",
+          "file": "cd-ui-02-empty-required-fields-html5-validation.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-03-no-file-selected-blocked-client-side.spec.ts",
+      "file": "cd-ui-03-no-file-selected-blocked-client-side.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-03: submitting a new document with no file selected is blocked client-side with a clear message",
+          "ok": false,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 30521,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at selectMaxDataGridPageSize (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-03-no-file-selected-blocked-client-side.spec.ts:9:3",
+                    "location": {
+                      "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                      "column": 21,
+                      "line": 114
+                    },
+                    "snippet": "   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                        "column": 21,
+                        "line": 114
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    24 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |\n    at selectMaxDataGridPageSize (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-03-no-file-selected-blocked-client-side.spec.ts:9:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:08.081Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-03-no-file-selected--02cbb-t-side-with-a-clear-message-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-03-no-file-selected--02cbb-t-side-with-a-clear-message-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-03-no-file-selected--02cbb-t-side-with-a-clear-message-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                    "column": 21,
+                    "line": 114
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "ac82e770acbcaab41e1b-5fbb4c6dc05fb2fa5a98",
+          "file": "cd-ui-03-no-file-selected-blocked-client-side.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+      "file": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-04 (confirmed gap): the file input's accept=\"...\" attribute is cosmetic only — setInputFiles bypasses it, and the server 400 surfaces in the dialog",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 22322,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:14.316Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-04-accept-attribute--f72da--400-surfaces-in-the-dialog-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-04-accept-attribute--f72da--400-surfaces-in-the-dialog-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "51d448597d03b790d06e-d34365f714cf2551f2b6",
+          "file": "cd-ui-04-accept-attribute-cosmetic-only.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-05-no-client-side-file-size-precheck.spec.ts",
+      "file": "cd-ui-05-no-client-side-file-size-precheck.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-05 (confirmed gap): no client-side file-size pre-check exists — an oversized file reaches the network before the 20MB limit is enforced server-side",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-05-no-client-side-file-size-precheck.spec.ts",
+                    "line": 10,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 37196,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:24.463Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-05-no-client-side-file-size-precheck.spec.ts",
+                        "line": 10,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-05-no-client-side-fi-d92d7-mit-is-enforced-server-side-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-05-no-client-side-fi-d92d7-mit-is-enforced-server-side-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8354103dfdc751e5340d-dfb9b2d7f600a5af3581",
+          "file": "cd-ui-05-no-client-side-file-size-precheck.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+      "file": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-08: the Version History dialog's per-version download button requests that specific version",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 28791,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at selectMaxDataGridPageSize (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-08-version-history-downloads-specific-version.spec.ts:14:3",
+                    "location": {
+                      "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                      "column": 21,
+                      "line": 114
+                    },
+                    "snippet": "   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                        "column": 21,
+                        "line": 114
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.MuiTablePagination-root [role=\"combobox\"]')\u001b[22m\n\u001b[2m    - locator resolved to <div id=\"_r_14_\" tabindex=\"0\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\" aria-labelledby=\"_r_15_ _r_14_\" class=\"MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-1mbyj29\">10</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    26 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <div class=\"MuiBox-root css-1wmbsm3\">…</div> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n\n   at ../helpers/locators.ts:114\n\n  112 |   const hasPagination = await rowsPerPage.waitFor({ state: 'visible', timeout: 5000 }).then(() => true, () => false);\n  113 |   if (!hasPagination) return;\n> 114 |   await rowsPerPage.click();\n      |                     ^\n  115 |   await page.getByRole('option', { name: '50' }).click();\n  116 | }\n  117 |\n    at selectMaxDataGridPageSize (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts:114:21)\n    at CompanyDocumentsPage.goto (/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/pages/CompanyDocumentsPage.ts:58:5)\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-08-version-history-downloads-specific-version.spec.ts:14:3"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:36.409Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-08-version-history-d-03cbc-uests-that-specific-version-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-08-version-history-d-03cbc-uests-that-specific-version-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-08-version-history-d-03cbc-uests-that-specific-version-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/helpers/locators.ts",
+                    "column": 21,
+                    "line": 114
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6fc46e6083ff1cbb92bc-b4726e9f2aa69446dd64",
+          "file": "cd-ui-08-version-history-downloads-specific-version.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cd-ui-09-employee-category-filter.spec.ts",
+      "file": "cd-ui-09-employee-category-filter.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "CD-UI-09: the employee view's category filter re-filters the already-fetched list without a new API call",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [
+                {
+                  "type": "slow",
+                  "location": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-09-employee-category-filter.spec.ts",
+                    "line": 6,
+                    "column": 30
+                  }
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 24794,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:37.678Z",
+                  "annotations": [
+                    {
+                      "type": "slow",
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cd-ui-09-employee-category-filter.spec.ts",
+                        "line": 6,
+                        "column": 30
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-09-employee-category-90231-list-without-a-new-API-call-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-09-employee-category-90231-list-without-a-new-API-call-chromium/test-finished-2.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cd-ui-09-employee-category-90231-list-without-a-new-API-call-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e9ca8b7f8c3f3ced82e1-a2e8c30b31b067ee7e9e",
+          "file": "cd-ui-09-employee-category-filter.spec.ts",
+          "line": 8,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "cross-module-apply-then-cancel-leave.spec.ts",
+      "file": "cross-module-apply-then-cancel-leave.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Cross-module: apply for a leave on /leaves, then cancel it via /cancellation, and verify status updates",
+          "ok": false,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 1,
+                  "status": "timedOut",
+                  "duration": 35549,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cross-module-apply-then-cancel-leave.spec.ts",
+                        "column": 31,
+                        "line": 32
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    13 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  30 |   await leaves.reasonField.fill(reason);\n  31 |   await leaves.submit();\n> 32 |   await expect(leaves.drawer).toHaveCount(0);\n     |                               ^\n  33 |\n  34 |   // 2. Confirm it appears under Pending.\n  35 |   await leaves.filterByStatus('Pending');\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/cross-module-apply-then-cancel-leave.spec.ts:32:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:30:41.339Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cross-module-apply-then-ca-d8de0-n-and-verify-status-updates-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cross-module-apply-then-ca-d8de0-n-and-verify-status-updates-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/cross-module-apply-then-ca-d8de0-n-and-verify-status-updates-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0a72d2dab836220560a0-f38716c69cc5d2460bf2",
+          "file": "cross-module-apply-then-cancel-leave.spec.ts",
+          "line": 16,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "dashboard-summary-cards-load.spec.ts",
+      "file": "dashboard-summary-cards-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Dashboard loads welcome banner and summary cards",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11254,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=admin slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=admin slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:02.412Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/dashboard-summary-cards-lo-81999-me-banner-and-summary-cards-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/dashboard-summary-cards-lo-81999-me-banner-and-summary-cards-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "65ffa8786d2aa8f0df0c-32c1c22ca7b3275d90c5",
+          "file": "dashboard-summary-cards-load.spec.ts",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-fn-05-hr-directory-sees-baseline-read.spec.ts",
+      "file": "em-fn-05-hr-directory-sees-baseline-read.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-FN-05: users.view.directory sees the baseline company-wide read",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 18374,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:03.084Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-fn-05-hr-directory-sees-40076--baseline-company-wide-read-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-fn-05-hr-directory-sees-40076--baseline-company-wide-read-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17015a5d40fb7933fde7-0b9334184c3c9e05c6bc",
+          "file": "em-fn-05-hr-directory-sees-baseline-read.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-fn-06-manager-sees-reporting-subtree.spec.ts",
+      "file": "em-fn-06-manager-sees-reporting-subtree.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-FN-06: users.view.team (manager) sees only their reporting subtree",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 10668,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=manager slot=2\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=manager slot=2\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:10.220Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-fn-06-manager-sees-repo-f2810-nly-their-reporting-subtree-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-fn-06-manager-sees-repo-f2810-nly-their-reporting-subtree-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "16ebb3d589e1165a215f-cf8a19c899b49b18bb76",
+          "file": "em-fn-06-manager-sees-reporting-subtree.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-ng-09-no-reset-password-action.spec.ts",
+      "file": "em-ng-09-no-reset-password-action.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-NG-09: users.password.reset is required — a caller without it never sees the Reset Password action",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9758,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=usersManageOnly slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=usersManageOnly slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:14.220Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ng-09-no-reset-password-43ccf-s-the-Reset-Password-action-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ng-09-no-reset-password-43ccf-s-the-Reset-Password-action-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4318839a198820148fa5-c78b6659adc531500429",
+          "file": "em-ng-09-no-reset-password-action.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-ng-11-manage-roles-action-absent.spec.ts",
+      "file": "em-ng-11-manage-roles-action-absent.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-NG-11: PUT /:id/roles is blocked without roles.manage — no Manage Roles action to trigger it from",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 17272,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=usersManageOnly slot=1\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=usersManageOnly slot=1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:22.306Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ng-11-manage-roles-acti-d23d9-s-action-to-trigger-it-from-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ng-11-manage-roles-acti-d23d9-s-action-to-trigger-it-from-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e4161afd462e58acef3b-a5fd754af3e8dfa8fc26",
+          "file": "em-ng-11-manage-roles-action-absent.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+      "file": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "EM-UI-12: Manage Roles is only visible/loadable with roles.manage",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 18281,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=usersManageOnly slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=usersManageOnly slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:21.998Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ui-12-manage-roles-hidd-852d8--loadable-with-roles-manage-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/em-ui-12-manage-roles-hidd-852d8--loadable-with-roles-manage-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5722b162f43f544d01b0-39f20fe9569ab743e568",
+          "file": "em-ui-12-manage-roles-hidden-without-permission.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "leaves-apply-full-day-happy-path.spec.ts",
+      "file": "leaves-apply-full-day-happy-path.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Apply for Leave (Full Day): submit a valid full-day leave request end-to-end",
+          "ok": false,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 21479,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    13 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    13 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-full-day-happy-path.spec.ts:39:31",
+                    "location": {
+                      "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-full-day-happy-path.spec.ts",
+                      "column": 31,
+                      "line": 39
+                    },
+                    "snippet": "  37 |\n  38 |   // Modal closes.\n> 39 |   await expect(leaves.drawer).toHaveCount(0);\n     |                               ^\n  40 |\n  41 |   // Appears under both All and Pending — matched via the grid's rendered\n  42 |   // \"{start} → {end}\" Dates cell (see LeavesPage.rowByDateRangeText's doc"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-full-day-happy-path.spec.ts",
+                        "column": 31,
+                        "line": 39
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    13 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  37 |\n  38 |   // Modal closes.\n> 39 |   await expect(leaves.drawer).toHaveCount(0);\n     |                               ^\n  40 |\n  41 |   // Appears under both All and Pending — matched via the grid's rendered\n  42 |   // \"{start} → {end}\" Dates cell (see LeavesPage.rowByDateRangeText's doc\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-full-day-happy-path.spec.ts:39:31"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:22.056Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-full-day-happ-e13f5-ay-leave-request-end-to-end-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-full-day-happ-e13f5-ay-leave-request-end-to-end-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-full-day-happ-e13f5-ay-leave-request-end-to-end-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-full-day-happy-path.spec.ts",
+                    "column": 31,
+                    "line": 39
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "a784ab828189ddfa947b-7ee2cc5f8fcb9cd206ca",
+          "file": "leaves-apply-full-day-happy-path.spec.ts",
+          "line": 15,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "leaves-apply-half-day-happy-path.spec.ts",
+      "file": "leaves-apply-half-day-happy-path.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Apply for Leave (Half Day): submit a valid half-day leave request",
+          "ok": false,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 24324,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-half-day-happy-path.spec.ts:39:31",
+                    "location": {
+                      "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-half-day-happy-path.spec.ts",
+                      "column": 31,
+                      "line": 39
+                    },
+                    "snippet": "  37 |   await leaves.submit();\n  38 |\n> 39 |   await expect(leaves.drawer).toHaveCount(0);\n     |                               ^\n  40 |\n  41 |   // A half-day request's start and end date are the same day — the grid's\n  42 |   // Dates cell for it therefore renders \"{start} → {start}\"."
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-half-day-happy-path.spec.ts",
+                        "column": 31,
+                        "line": 39
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.MuiDrawer-root').filter({ hasText: 'Record Leave' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  37 |   await leaves.submit();\n  38 |\n> 39 |   await expect(leaves.drawer).toHaveCount(0);\n     |                               ^\n  40 |\n  41 |   // A half-day request's start and end date are the same day — the grid's\n  42 |   // Dates cell for it therefore renders \"{start} → {start}\".\n    at /tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-half-day-happy-path.spec.ts:39:31"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=employeeSelf slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=employeeSelf slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:24.232Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-half-day-happ-0ac3f-alid-half-day-leave-request-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-half-day-happ-0ac3f-alid-half-day-leave-request-chromium/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-half-day-happ-0ac3f-alid-half-day-leave-request-chromium/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/tests/leaves-apply-half-day-happy-path.spec.ts",
+                    "column": 31,
+                    "line": 39
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b61b10cab4e383b092a9-8b981d16ff2e284803d0",
+          "file": "leaves-apply-half-day-happy-path.spec.ts",
+          "line": 15,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "leaves-apply-validation-errors.spec.ts",
+      "file": "leaves-apply-validation-errors.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Apply for Leave: validation and boundary errors are handled",
+          "file": "leaves-apply-validation-errors.spec.ts",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "empty required fields block submission with no request created",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 15235,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:31:40.672Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-9ca3e-ion-with-no-request-created-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-9ca3e-ion-with-no-request-created-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c6dca04ca156dfde8005-00960cbe9a488c9ea87f",
+              "file": "leaves-apply-validation-errors.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "End Date earlier than Start Date is rejected",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 17750,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:31:40.790Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-0e390-than-Start-Date-is-rejected-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-0e390-than-Start-Date-is-rejected-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c6dca04ca156dfde8005-e428c0fe43c2de63bffd",
+              "file": "leaves-apply-validation-errors.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "a past Start Date is blocked or flagged",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 16019,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:31:49.634Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-5e0bf--Date-is-blocked-or-flagged-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-5e0bf--Date-is-blocked-or-flagged-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c6dca04ca156dfde8005-dce6cafde31f4d91a340",
+              "file": "leaves-apply-validation-errors.spec.ts",
+              "line": 59,
+              "column": 7
+            },
+            {
+              "title": "requesting more days than the remaining balance is rejected",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17966,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:31:53.143Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-c1b55-maining-balance-is-rejected-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-c1b55-maining-balance-is-rejected-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c6dca04ca156dfde8005-109d933c7474f4f3ca07",
+              "file": "leaves-apply-validation-errors.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "an empty Reason is blocked by required-field validation",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 27256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:31:56.523Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-40089-y-required-field-validation-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/leaves-apply-validation-er-40089-y-required-field-validation-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c6dca04ca156dfde8005-e5e93d705ae048709cae",
+              "file": "leaves-apply-validation-errors.spec.ts",
+              "line": 129,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login-logout-and-relogin.spec.ts",
+      "file": "login-logout-and-relogin.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "user can log out and log back in, landing on Dashboard",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 12235,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=admin slot=3\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=admin slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:31:59.126Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/login-logout-and-relogin-u-b1aef-ack-in-landing-on-Dashboard-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/login-logout-and-relogin-u-b1aef-ack-in-landing-on-Dashboard-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "e0b047ad8d5bee26ee72-0951b389a3eaab9ab4e0",
+          "file": "login-logout-and-relogin.spec.ts",
+          "line": 12,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ng-01-self-cannot-target-another-employee.spec.ts",
+      "file": "lv-ng-01-self-cannot-target-another-employee.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-NG-01: employeeSelf (no leaves.apply.any) has no way to target another employee",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 30864,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:06.933Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ng-01-self-cannot-targe-25123--to-target-another-employee-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ng-01-self-cannot-targe-25123--to-target-another-employee-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "650194dbd03ac6372c85-267926390c087cf85c8e",
+          "file": "lv-ng-01-self-cannot-target-another-employee.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-05-half-day-hides-end-date.spec.ts",
+      "file": "lv-ui-05-half-day-hides-end-date.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-05: toggling Half Day forces end_date = start_date and hides the End Date field",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 12175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:11.894Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-05-half-day-hides-en-e1698-nd-hides-the-End-Date-field-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-05-half-day-hides-en-e1698-nd-hides-the-End-Date-field-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8164dcc518b78c13b4de-90d461bcbc83501f68b8",
+          "file": "lv-ui-05-half-day-hides-end-date.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-08-leave-allocation-chart.spec.ts",
+      "file": "lv-ui-08-leave-allocation-chart.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-08: LeaveAllocationChart (Allocated vs Used) renders on the employee dashboard",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9873,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:12.266Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-08-leave-allocation--4f4a6-s-on-the-employee-dashboard-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-08-leave-allocation--4f4a6-s-on-the-employee-dashboard-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "69f4b869204405b50cd8-40c709ce188aa5a47cae",
+          "file": "lv-ui-08-leave-allocation-chart.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-09-approvals-queue-card.spec.ts",
+      "file": "lv-ui-09-approvals-queue-card.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-09: ApprovalsQueueCard renders \"Pending Approvals\" and deep-links into /leaves, with no duplicate approve/reject action",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10952,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[AuthenticationManager] [CACHE MISS] persona=manager slot=0\n"
+                    },
+                    {
+                      "text": "[AuthenticationManager] [LOGIN] persona=manager slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:22.653Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-09-approvals-queue-c-dfd61-icate-approve-reject-action-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-09-approvals-queue-c-dfd61-icate-approve-reject-action-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b167f2feac8caf7ca314-29074e02e387dd4f33bb",
+          "file": "lv-ui-09-approvals-queue-card.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-10-team-time-off-strip.spec.ts",
+      "file": "lv-ui-10-team-time-off-strip.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-10: the \"Team Time Off\" / \"Global Time Off\" 7-day strip renders on the manager dashboard",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12111,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:24.093Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-10-team-time-off-str-b7faf-rs-on-the-manager-dashboard-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-10-team-time-off-str-b7faf-rs-on-the-manager-dashboard-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7c8850cd8b39e663b3a3-8556d71af9cc0ba3df66",
+          "file": "lv-ui-10-team-time-off-strip.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-ui-11-date-picker-minimum.spec.ts",
+      "file": "lv-ui-11-date-picker-minimum.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-UI-11: the date-picker minimum is hardcoded to 2026-01-01 rather than computed from today (known gap)",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 14181,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:24.247Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-11-date-picker-minim-d34eb-puted-from-today-known-gap--chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-ui-11-date-picker-minim-d34eb-puted-from-today-known-gap--chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3344eca37eadf9f4e699-41ec7c362b5983ec6e58",
+          "file": "lv-ui-11-date-picker-minimum.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "lv-vd-01-required-fields-block-submit.spec.ts",
+      "file": "lv-vd-01-required-fields-block-submit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "LV-VD-01: submitting with type/start_date/end_date missing is blocked by required-field browser validation",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:34.042Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-vd-01-required-fields-b-f8e44-ed-field-browser-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/lv-vd-01-required-fields-b-f8e44-ed-field-browser-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a58b950a99fc33fbbf6a-c842e986637872a7f513",
+          "file": "lv-vd-01-required-fields-block-submit.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-bd-12-storage-usage-warning-absent.spec.ts",
+      "file": "pa-bd-12-storage-usage-warning-absent.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-BD-12 (confirmed gap): no \"Approaching limit\" chip exists anywhere in the Storage Usage section, for any company, at any usage ratio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7979,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [CACHE MISS] persona=platformAdmin slot=0\n"
+                    },
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [LOGIN] persona=platformAdmin slot=0\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:07.733Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-bd-12-storage-usage-war-f62a4--company-at-any-usage-ratio-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-bd-12-storage-usage-war-f62a4--company-at-any-usage-ratio-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c8d07feb7bfda02914f9-57311b4b26d4cca4a437",
+          "file": "pa-bd-12-storage-usage-warning-absent.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-01-invalid-email-validation.spec.ts",
+      "file": "pa-ui-01-invalid-email-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-01: an invalid email format shows inline client-side validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:08.516Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-01-invalid-email-val-0fa63-line-client-side-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-01-invalid-email-val-0fa63-line-client-side-validation-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-01-invalid-email-val-0fa63-line-client-side-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1cbab029e36181b61974-1c564824112715767088",
+          "file": "pa-ui-01-invalid-email-validation.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-02-empty-password-validation.spec.ts",
+      "file": "pa-ui-02-empty-password-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-02: an empty password shows inline client-side validation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10315,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:09.105Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-02-empty-password-va-b9c2e-line-client-side-validation-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2dd8985de90f4825b3b3-d86ca9afe70cfe040fa6",
+          "file": "pa-ui-02-empty-password-validation.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-03-mocked-login-error-alert.spec.ts",
+      "file": "pa-ui-03-mocked-login-error-alert.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-03: a mocked 401/429 login response is surfaced in the top-level Alert",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 12304,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:09.202Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-03-mocked-login-erro-8a0c9-aced-in-the-top-level-Alert-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ef3c2e55ce53a9a8e046-8720e2b916aca8ea34d1",
+          "file": "pa-ui-03-mocked-login-error-alert.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-04-company-search.spec.ts",
+      "file": "pa-ui-04-company-search.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-04: typing in the search box filters the company list (debounced)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8522,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:16.713Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-04-company-search-PA-5ef4e-the-company-list-debounced--chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-04-company-search-PA-5ef4e-the-company-list-debounced--chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bb6e768740632ba77da2-e37c3655fdf4082cf33a",
+          "file": "pa-ui-04-company-search.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-05-company-status-filter.spec.ts",
+      "file": "pa-ui-05-company-status-filter.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-05: cycling the status filter changes which companies are listed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 14124,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [CACHE MISS] persona=platformAdmin slot=3\n"
+                    },
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [LOGIN] persona=platformAdmin slot=3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:19.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-05-company-status-fi-b3222--which-companies-are-listed-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-05-company-status-fi-b3222--which-companies-are-listed-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d719661d6a2049254fcc-aaa02f68dcaaf8ee9695",
+          "file": "pa-ui-05-company-status-filter.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-11-company-detail-tabs.spec.ts",
+      "file": "pa-ui-11-company-detail-tabs.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-11: Profile/Tenant Health/Usage/Provisioning History tabs each render their own content with no cross-tab leakage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11457,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [CACHE MISS] persona=platformAdmin slot=1\n"
+                    },
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [LOGIN] persona=platformAdmin slot=1\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:20.187Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-11-company-detail-ta-44ae3-t-with-no-cross-tab-leakage-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-11-company-detail-ta-44ae3-t-with-no-cross-tab-leakage-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1e70675dc40c92bebea2-005c787cff8c79f2386e",
+          "file": "pa-ui-11-company-detail-tabs.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-12-employee-usage-warning-absent.spec.ts",
+      "file": "pa-ui-12-employee-usage-warning-absent.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-12: the employee-usage \"Approaching limit\" chip is absent for a company comfortably under its plan limit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7913,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [CACHE MISS] persona=platformAdmin slot=2\n"
+                    },
+                    {
+                      "text": "[PlatformAdminAuthenticationManager] [LOGIN] persona=platformAdmin slot=2\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:22.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-12-employee-usage-wa-09a35-rtably-under-its-plan-limit-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-12-employee-usage-wa-09a35-rtably-under-its-plan-limit-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "00a0caf4662391e242ee-190f4e14e0b5cc1d8e23",
+          "file": "pa-ui-12-employee-usage-warning-absent.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-13-history-hides-password.spec.ts",
+      "file": "pa-ui-13-history-hides-password.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-13/PA-SC-10: provisioning history never renders a plaintext password, even for a real historical entry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8559,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:25.872Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-13-history-hides-pas-cff15-for-a-real-historical-entry-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-13-history-hides-pas-cff15-for-a-real-historical-entry-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "070a62715fdcf59827fd-d8881c5783494c26b8b7",
+          "file": "pa-ui-13-history-hides-password.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-14-protected-route-redirect.spec.ts",
+      "file": "pa-ui-14-protected-route-redirect.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-14: navigating to a protected Platform Admin route while unauthenticated redirects to /platform-admin/login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4281,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:30.662Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-14-protected-route-r-73352-cts-to-platform-admin-login-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-14-protected-route-r-73352-cts-to-platform-admin-login-chromium/video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-14-protected-route-r-73352-cts-to-platform-admin-login-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c9265bb86517cedea017-584f4be8b5e338197146",
+          "file": "pa-ui-14-protected-route-redirect.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "pa-ui-15-expired-token-redirect.spec.ts",
+      "file": "pa-ui-15-expired-token-redirect.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "PA-UI-15: an access-token expiry with a failed refresh signs the user out and redirects to login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5982,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:33:32.224Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-15-expired-token-red-8fa15--out-and-redirects-to-login-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/pa-ui-15-expired-token-red-8fa15--out-and-redirects-to-login-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "07b9fb07b428cf7edc12-702f636c44a8b6bdc030",
+          "file": "pa-ui-15-expired-token-redirect.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "settings-update-password-validation.spec.ts",
+      "file": "settings-update-password-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Settings: Update Password form validation",
+          "file": "settings-update-password-validation.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "empty fields block submission via required-field validation",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8619,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[AuthenticationManager] [CACHE MISS] persona=admin slot=1\n"
+                        },
+                        {
+                          "text": "[AuthenticationManager] [LOGIN] persona=admin slot=1\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:32:36.678Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-57cf8-a-required-field-validation-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-57cf8-a-required-field-validation-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "09c65f7def3b1d0db48c-19da2ae127b5ebca33be",
+              "file": "settings-update-password-validation.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "a New/Confirm Password mismatch is rejected",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 7926,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[AuthenticationManager] [CACHE MISS] persona=admin slot=2\n"
+                        },
+                        {
+                          "text": "[AuthenticationManager] [LOGIN] persona=admin slot=2\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:32:38.637Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-34d2d-ssword-mismatch-is-rejected-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-34d2d-ssword-mismatch-is-rejected-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "09c65f7def3b1d0db48c-8429b35eb6a97535ce93",
+              "file": "settings-update-password-validation.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "an incorrect Current Password is rejected by the server",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 8008,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-28T14:32:38.871Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-6b99b-d-is-rejected-by-the-server-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/settings-update-password-v-6b99b-d-is-rejected-by-the-server-chromium/trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "09c65f7def3b1d0db48c-aa6bd311d7b0dcc6dffe",
+              "file": "settings-update-password-validation.spec.ts",
+              "line": 51,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "vc-fn-06-show-team-navigation.spec.ts",
+      "file": "vc-fn-06-show-team-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-FN-06 (UI half): SHOW_TEAM navigates immediately with no confirmation modal and no /voice/execute call",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8718,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:45.653Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-fn-06-show-team-navigat-90728-l-and-no-voice-execute-call-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-fn-06-show-team-navigat-90728-l-and-no-voice-execute-call-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "95e6cfa5addf0211e4fc-32873f4c45a45b59a64e",
+          "file": "vc-fn-06-show-team-navigation.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "vc-ui-01-mic-visible-lowest-privilege.spec.ts",
+      "file": "vc-ui-01-mic-visible-lowest-privilege.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-UI-01 (partial): the mic button renders unconditionally for the lowest-privilege configured persona — TopNav has no hasPermission('voice.use') gate of any kind",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 10269,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:46.816Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-01-mic-visible-lowes-23030--voice-use-gate-of-any-kind-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff544b6e54822b6fa761-a201b531169da2c4fc2b",
+          "file": "vc-ui-01-mic-visible-lowest-privilege.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "vc-ui-02-mic-listening-transcript.spec.ts",
+      "file": "vc-ui-02-mic-listening-transcript.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-UI-02: a real click on the mic, with a (mocked) recognizer active, flips the tooltip to \"Stop listening\" and shows a live transcript tooltip once a result arrives",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7447,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:46.951Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-02-mic-listening-tra-39779-oltip-once-a-result-arrives-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-02-mic-listening-tra-39779-oltip-once-a-result-arrives-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "7684c5f105a4e7a327aa-697840c55417cbd0cced",
+          "file": "vc-ui-02-mic-listening-transcript.spec.ts",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "vc-ui-04-no-speech-support-noop.spec.ts",
+      "file": "vc-ui-04-no-speech-support-noop.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-UI-04 (confirmed gap): with no Web Speech API implementation at all, the mic button still renders and remains silently clickable — toggleListening() no-ops with zero user-visible feedback, not even an error state",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11475,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:54.624Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-04-no-speech-support-484a8-ack-not-even-an-error-state-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-04-no-speech-support-484a8-ack-not-even-an-error-state-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ec038e96c0605f6e4f57-b2dcf74dedf127cddfaf",
+          "file": "vc-ui-04-no-speech-support-noop.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "vc-ui-05-speech-network-error.spec.ts",
+      "file": "vc-ui-05-speech-network-error.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-UI-05: a genuine Speech API network error triggers the one user-visible error path anywhere in this feature — a browser alert()",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 10385,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:54.771Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-05-speech-network-er-2f8aa--feature-—-a-browser-alert--chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-05-speech-network-er-2f8aa--feature-—-a-browser-alert--chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f802588ebc768ba3c909-f25a3e704bd48cac703f",
+          "file": "vc-ui-05-speech-network-error.spec.ts",
+          "line": 5,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "vc-ui-06-confirmation-description.spec.ts",
+      "file": "vc-ui-06-confirmation-description.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "VC-UI-06 (confirmed gap): the confirmation modal shows only the resolved name/date description — no leave id, date-range, leave-type detail, or raw-transcript-vs-resolved-entity comparison a user could use to catch a bad fuzzy match before confirming",
+          "ok": true,
+          "tags": [
+            "regression"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-08-28T14:32:57.346Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-06-confirmation-desc-95493-zzy-match-before-confirming-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/tmp/maestro/959d2ad1-271c-4b89-88ae-b2a8938c00c5/app/test-results/vc-ui-06-confirmation-desc-95493-zzy-match-before-confirming-chromium/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "9aa61135318594006c2d-87f663cf1156c656b674",
+          "file": "vc-ui-06-confirmation-description.spec.ts",
+          "line": 7,
+          "column": 5
+        }
+      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-27T15:51:05.910Z",
-    "duration": 42008.244,
-    "expected": 5,
+    "startTime": "2026-08-28T14:29:04.000Z",
+    "duration": 274443.364,
+    "expected": 52,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 6,
     "flaky": 0
   }
 }
