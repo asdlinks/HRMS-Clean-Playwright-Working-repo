@@ -1,14 +1,8 @@
 [
   {
-    "id": "login-logout-and-relogin",
-    "title": "user can log out and log back in, landing on Dashboard",
-    "description": "Verifies the Dashboard is the Home page and that a user can log out via the account menu and log back in successfully.",
-    "file": "tests/login-logout-and-relogin.spec.ts"
-  },
-  {
-    "id": "settings-update-password-validation",
-    "title": "Settings: Update Password form validation",
-    "description": "Covers empty-field, mismatched New/Confirm, and incorrect Current Password error states on the Settings > Update Password form.",
-    "file": "tests/settings-update-password-validation.spec.ts"
+    "id": "leaves-apply-different-leave-types",
+    "title": "Apply for Leave: switching Leave Type combobox shows correct balances for each type",
+    "description": "Enumerates the Leave Type combobox's options, switches to a non-default type, confirms its own '(N left)' balance label replaces Casual's, and submits a full leave request under that type end-to-end.",
+    "file": "tests/leaves-apply-different-leave-types.spec.ts"
   }
 ]
